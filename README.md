@@ -4,7 +4,7 @@ This tool is a combination of Python and batch scripts designed to facilitate th
 
 ## Installation:
 
-1. **Download** the ZIP file from releases "App Files" and extract it to your desired location.
+1. **Download** the ZIP file from releases "App Files" and extract it to your desired location. Choose from the App Files what version you want, Python or Exe one. (Exe one enables you to run the program without the program but it WILL be slower by 1 second)
 
 ## Adding and Switching Between Accounts:
 
