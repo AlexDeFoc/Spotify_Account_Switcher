@@ -1,9 +1,9 @@
 @echo off
 
-TASKKILL /F /IM spotify.exe"
+TASKKILL /F /IM spotify.exe
 
-python Copy.py
+python COPY.py
 
-"C:\Users\Alefan\AppData\Roaming\Spotify\Spotify.exe"
+"%UserProfile%\AppData\Roaming\Spotify\Spotify.exe"
 
 pause
