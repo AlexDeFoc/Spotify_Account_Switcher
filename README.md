@@ -19,7 +19,7 @@ This tool is a combination of Python and batch scripts designed to facilitate th
 
 ## Automation:
 
-This program is highly flexible and can be automated using tools such as FlowLauncher and Espanso. For example, you can create a command like "`:sp1`" or "`:sp2`" to switch to "`User_1`" or "`User_2`".
+This program is highly flexible and can be automated using tools such as FlowLauncher and Espanso. For example, you can create a command like "`:sp1`" or "`:sp2`" and with the help of espanso these would expand to the path of the batch file apropriate to the user i want to switch to "`User_1`" or "`User_2`". And with the help of FlowLauncher for pasting the path of the command into cmd thus running the batch file.
 
 ## How It Works:
 
