@@ -8,7 +8,7 @@ This tool is a combination of Python and batch scripts designed to facilitate th
 
 ## Adding and Switching Between Accounts:
 
-1. To save a Spotify account, double-click the "`New_User.py`" file. This will create a new folder called "`User_1`" and copy the necessary files from the parent "`Source`" folder into it. The "`PREFS`" file containing encrypted account data will also be copied.
+1. To save a Spotify account, double-click the "`New_User.py`" file. This will create a new folder called "`User" and copy the necessary files from the parent "`Source`" folder into it. The "`PREFS`" file containing encrypted account data will also be copied.
 2. To add another account, disconnect from Spotify and connect to the desired account. Then, double-click the "`New_User.py`" file again to create a new user folder.
 3. After creating multiple user folders, you can rename them as per your preference.
 
