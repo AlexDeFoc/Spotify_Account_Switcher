@@ -1,4 +1,5 @@
 # Short about this app:
+* App made fully in go and distributed as executable for any platform. (batch is code is only for ME to build and compress the app for releasing)
 * It's a very easy to use, flexible naming customisation and protability app.
 * It provides the user to make multiple "User Folders" which will store the spotify user data so you don't have to login again when wanting to switch accounts!
 
