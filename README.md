@@ -1,30 +1,26 @@
 # Short about this app:
-* It's a very easy to use, flexible naming customisation and protability app. \
+* It's a very easy to use, flexible naming customisation and protability app.
 * It provides the user to make multiple "User Folders" which will store the spotify user data so you don't have to login again when wanting to switch accounts!
 
----
 
-Platforms supported:
-Platforms:
+# Platforms supported:
 - Windows
 - Linux
 - MacOS (called darwin)
 
-Architectures:
+# Architectures supported:
 - AMD64 : for a cpu of 64 bit
 - 386 : for a cpu of 32/86 bit
 - ARM : for cpu of type arm
 - ARM64 : for cpu of type arm64
 
----
-
-How to download released archive:
+# How to download released archive:
 1. Go to releases
 2. Choose your version
 3. Download the archive with the platform-architecture name from the chapters above
 4. De-archive/Extract the contents in a folder where you want your "Spotify Account Switcher" app to be
 
-How to use the app:
+# How to use the app:
 There are two parts of the program:
 1. Main
 2. Switch
@@ -35,21 +31,37 @@ There are two parts of the program:
 - The switch one, run it and it will:
   - copy or overide the "prefs" file from the spotify directory with the one inside your user folder
 
-Customisation:
+# Customisation:
 - This app is flexible for naming but robust for the actual structure
 - Naming :
    - You can change the name of the folder newly create by the main executable to anything you want!
 - Portability :
  - After you create a user folder you can move it anywhere you want!
 
----
-
-How it all works:
+# How it all works:
 1. The main executable
-- creates a folder if it doesn't exist already called "New User"
-- copy the switch executable from the source folder into the new user folder
-- copy the prefs file from the spotify directory into your new user folder
+  - creates a folder if it doesn't exist already called "New User"
+  - copy the switch executable from the source folder into the new user folder
+  - copy the prefs file from the spotify directory into your new user folder
 2. How the app finds the prefs file:
- - based on the OS (operating system) it expands/goes to a directory through enviroment variables of the system or simply the path
+  - based on the OS (operating system) it expands/goes to a directory through enviroment variables of the system or simply the path
 3. The switch executable:
-   - copies the prefs file within the directory of the switch executable and copies or overides the one from the spotify directory.
+  - copies the prefs file within the directory of the switch executable and copies or overides the one from the spotify directory.
+
+
+# Building from source:
+### 1. Building with the command (RECOMMENDED) (put the following commands):
+- go build main.go
+- (and inside your user folder):
+  - go build switch.go
+
+### 2. Running without building with the command (NOT RECOMMENDED - slower) (put the following commands):
+- go run main.go
+- (and inside your user folder):
+  - go run switch.go
+
+### 3. The build batch file (NOT RECOMMENDED):
+- that script will create a folder called export which will contain a build folder for each platform
+
+### 4. The compress batch file (NOT RECOMMENDED):
+- that script will compress each folder insidethe export folder into a folder called archive containing the archived build folders for each platform 
