@@ -9,7 +9,7 @@ import (
 )
 
 func main(){
-  err := copy("../prefs", getPrefsPath())
+  err := copy("prefs", getPrefsPath())
   if err != nil {
     log.Panic(err)
   }
