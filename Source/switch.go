@@ -6,13 +6,34 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+    "fmt"
 )
 
 func main(){
-  err := copy("prefs", getPrefsPath())
-  if err != nil {
-    log.Panic(err)
-  }
+    // Get the path of the executing script
+    exePath, err := os.Executable()
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+
+    // Get the absolute path of the executing script
+    absPath, err := filepath.Abs(exePath)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+
+    // Get the directory of the executing script
+    scriptDir := filepath.Dir(absPath)
+
+    // Get the location of File A
+    userPrefsPath := filepath.Join(scriptDir, "prefs")
+
+    err = copy(userPrefsPath, getPrefsPath())
+    if err != nil {
+        log.Panic(err)
+    }
 }
 
 // getPrefsPath returns the path to the prefs file based on the OS.

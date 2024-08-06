@@ -1,0 +1,17 @@
+- Complete rework of documentation
+✅1. About app
+✅2. Support
+✅3. How to install
+✅4. How to use
+    Create a new user
+    Switch to new user
+✅5. Automate for easier switch
+✅6. Build & Run from source
+    Note
+    Build
+    Run
+✅7. Contribute
+    Note
+    Goals
+
+- Fixed issue with switch.go not finding prefs file inside the place where was it being executate. Made it very hard to make scripts & automate. Now you can call it from anywhere else.
